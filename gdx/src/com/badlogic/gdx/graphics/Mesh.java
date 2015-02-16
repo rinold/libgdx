@@ -793,47 +793,47 @@ public class Mesh implements Disposable {
 		return (float)Math.sqrt(calculateRadiusSquared(centerX, centerY, centerZ, offset, count, transform));
 	}
 
-	/** Calculates the squared radius of the bounding sphere around the specified center for the specified part.
+	/** Calculates the radius of the bounding sphere around the specified center for the specified part.
 	 * @param center The center of the bounding sphere
 	 * @param offset the start index of the part.
 	 * @param count the amount of indices the part contains.
-	 * @return the squared radius of the bounding sphere. */
+	 * @return the radius of the bounding sphere. */
 	public float calculateRadius (final Vector3 center, int offset, int count, final Matrix4 transform) {
 		return calculateRadius(center.x, center.y, center.z, offset, count, transform);
 	}
 
-	/** Calculates the squared radius of the bounding sphere around the specified center for the specified part.
+	/** Calculates the radius of the bounding sphere around the specified center for the specified part.
 	 * @param centerX The X coordinate of the center of the bounding sphere
 	 * @param centerY The Y coordinate of the center of the bounding sphere
 	 * @param centerZ The Z coordinate of the center of the bounding sphere
 	 * @param offset the start index of the part.
 	 * @param count the amount of indices the part contains.
-	 * @return the squared radius of the bounding sphere. */
+	 * @return the radius of the bounding sphere. */
 	public float calculateRadius (final float centerX, final float centerY, final float centerZ, int offset, int count) {
 		return calculateRadius(centerX, centerY, centerZ, offset, count, null);
 	}
 
-	/** Calculates the squared radius of the bounding sphere around the specified center for the specified part.
+	/** Calculates the radius of the bounding sphere around the specified center for the specified part.
 	 * @param center The center of the bounding sphere
 	 * @param offset the start index of the part.
 	 * @param count the amount of indices the part contains.
-	 * @return the squared radius of the bounding sphere. */
+	 * @return the radius of the bounding sphere. */
 	public float calculateRadius (final Vector3 center, int offset, int count) {
 		return calculateRadius(center.x, center.y, center.z, offset, count, null);
 	}
 
-	/** Calculates the squared radius of the bounding sphere around the specified center for the specified part.
+	/** Calculates the radius of the bounding sphere around the specified center for the specified part.
 	 * @param centerX The X coordinate of the center of the bounding sphere
 	 * @param centerY The Y coordinate of the center of the bounding sphere
 	 * @param centerZ The Z coordinate of the center of the bounding sphere
-	 * @return the squared radius of the bounding sphere. */
+	 * @return the radius of the bounding sphere. */
 	public float calculateRadius (final float centerX, final float centerY, final float centerZ) {
 		return calculateRadius(centerX, centerY, centerZ, 0, getNumIndices(), null);
 	}
 
-	/** Calculates the squared radius of the bounding sphere around the specified center for the specified part.
+	/** Calculates the radius of the bounding sphere around the specified center for the specified part.
 	 * @param center The center of the bounding sphere
-	 * @return the squared radius of the bounding sphere. */
+	 * @return the radius of the bounding sphere. */
 	public float calculateRadius (final Vector3 center) {
 		return calculateRadius(center.x, center.y, center.z, 0, getNumIndices(), null);
 	}
